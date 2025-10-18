@@ -1,0 +1,150 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  color:  #9900ff;
+  font-family: sans-serif;
+  font-size: 45px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  list-style-type: none;
+  transition: var(--TransitionSpeed);
+  position: absolute;
+  top: 0px;
+  left: calc(var(--NavbarRootPositionX) - 15px);
+  
+}
+
+.headimage {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100px;
+  height: 100px;
+  z-index: +1;
+}
+
+description {
+  font-family: sans-serif;
+  font size: 50px;
+  color:  #39323e;
+  center: true;
+}
+
+body {
+  background-color: var(--BackgroundColour);
+  color: var(--AccentColour);
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden
+}
+
+:root {
+  --AccentColour: #bb00ff;
+  --HighlightColour: #ff0000;
+  /*--ButtonFillColour: #29272b;*/
+  --ButtonFillColour: #2d0984;
+  --BorderPx: 4px;
+  --TransitionSpeed: 0.3s;
+  --NavbarRootPositionX: 120px;
+  --NavbarRootPositionY: 60px;
+   --BackgroundColour:  #dbf3c4; 
+  /* --NavbarColour: #f3f2ec; */
+  --NavbarColour: #f2fefe;
+  /*--BackgroundColour: #f2fefe;*/
+}
+
+.blank {
+  color: var(--AccentColour);
+  center: false;
+  background-color: var(--ButtonFillColour);
+  padding: 1px;
+  margin: 1px;
+  /*display: inline-block;*/
+}
+
+#home_page_background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1800px; /* Adjust as needed */
+  height: 130px; /* Adjust as needed */
+  background-color: var(--NavbarColour);
+  z-index: -1; /* Ensure it's behind the text */
+}
+
+.navbutton {
+  color: #ee905b; /* sets the text colour of the buttons*/
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 50px;
+  center: false;
+  background-color: var(--ButtonFillColour);
+  border: var(--BorderPx) solid var(--AccentColour);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 2px; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--TransitionSpeed);
+  position: absolute;
+  top: var(--NavbarRootPositionY);
+  left: var(--NavbarRootPositionX);
+
+}
+
+.navbutton:hover {
+  border: var(--BorderPx) solid #b35690;
+  color: #fabf3f;
+  transition: var(--TransitionSpeed);
+}
+
+
+
+#Forum {
+  position: absolute;
+  top: var(--NavbarRootPositionY);
+  left: calc(var(--NavbarRootPositionX) + 85px);
+} 
+
+#home_page {
+  position: absolute;
+  top: 200px;
+  left: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:  #39323e;
+  center: true
+}
+
+#MarketplaceParagraph {
+  position: absolute;
+  top: 180px;
+  left: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:  #39323e;
+}
+
+#ForumParagraph {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:  #39323e;
+}
